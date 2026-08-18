@@ -34,6 +34,16 @@ This creates `reference/`, `search/`, and `ground_truth.csv` under
 `demo_data/`. The public generator supports FinFET only. Generated outputs
 are excluded from version control.
 
+### Optional noise level
+
+Add `--noise-mode` to generate a specific acquisition-noise profile:
+
+```bash
+python generate_dataset.py --architecture finfet --num-pairs 5 --output-dir demo_data --seed 42 --noise-mode high
+```
+
+Supported values are `clean`, `low`, `medium`, `high`, and `random`.
+
 To view every generation option:
 
 ```bash
