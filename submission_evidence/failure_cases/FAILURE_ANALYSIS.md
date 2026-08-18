@@ -1,12 +1,15 @@
-# Highest-error selected case
+# Documented high-error cases
 
-- Sample ID: `medium_001`
-- Reference: [`../selected_30/reference/pair_023.png`](../selected_30/reference/pair_023.png)
-- Search: [`../selected_30/search/pair_023.png`](../selected_30/search/pair_023.png)
-- Ground truth: (650.000000, 364.000000)
-- Prediction: (569.923543, 55.080207)
-- Error: 319.129562 px
-- Confidence: 0.000000
-- Generator metadata: noise=medium, rotation=0.00°
+All cases below are genuine, frozen-localizer measurements from the selected
+30-pair subset. Green marks ground truth and red marks the prediction.
 
-This is the selected subset's genuine highest measured error. It is a failure at every tolerance below its measured error; whether it is a failure at 5 px is stated by its recorded difficulty label. Periodic FinFET geometry creates visually similar candidate regions, while the actual noise profile and rotation further reduce contrast. No matcher, candidate, ranking, or label was changed for this analysis.
+| Case | Sample | Error | Confidence | Generator metadata |
+| --- | --- | ---: | ---: | --- |
+| [01](failure_case_01.png) | `medium_001` | 319.130 px | 0.000000 | medium noise; 0.00° rotation |
+| [02](failure_case_02.png) | `medium_000` | 290.583 px | 0.000000 | medium noise; 0.00° rotation |
+| [03](failure_case_03.png) | `high_000` | 216.479 px | 0.000000 | high noise; 2.71° rotation |
+| [04](failure_case_04.png) | `high_008` | 106.345 px | 0.000000 | high noise; -0.78° rotation |
+
+These are failures at the 5 px criterion. See
+[WHY_FAILURES_OCCUR.md](WHY_FAILURES_OCCUR.md) for the evidence-based cause
+analysis and limitations of that interpretation.

@@ -18,7 +18,6 @@ seed; the committed selected-30 metadata points to the included copies.
 - [Selected pair metadata](selected_30/metadata.csv), [comments](selected_30/pair_comments.md), and overlays (green = GT; red = prediction)
 - [Graphs](graphs/) including PR, tolerance, confidence-calibration matrices, noise stress, and error distribution
 - [Failure analysis](failure_cases/FAILURE_ANALYSIS.md)
-- [Scoring utility status](scoring_utility/README.md)
 
 ## Interpretation
 
