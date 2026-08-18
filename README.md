@@ -49,6 +49,16 @@ python -m streamlit run app.py
 The browser interface is optional and is useful for local inspection and
 validation.
 
+## Evaluation Evidence
+
+[`submission_evidence/`](submission_evidence/README.md) contains the fixed-seed
+synthetic FinFET evaluation evidence: a 30-pair representative subset,
+ground-truth/prediction results, metadata and pair notes, tolerance and
+precision-recall figures, noise-stress analysis, sub-pixel metrics, failure
+analysis, and environment information. It is generated with the frozen public
+generator and localizer; its report distinguishes the full synthetic pool from
+the deliberately diverse selected examples.
+
 ## Notes
 
 - Python 3.14.7 was used for final checks.

@@ -43,6 +43,7 @@ wheels/
 /outputs/
 /submission_smoke/
 /demo_data/
+/evidence_pool/
 /tmp/
 /temp/
 /.cache/
