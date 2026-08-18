@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Generated data, benchmarks, diagnostics, and local smoke outputs.
+# The small finfet_base_images/ directory is intentionally tracked because
+# generate_dataset.py requires those source layouts.
+/data/
+/benchmark_data/
+/evaluation/
+/evaluation_all/
+/generated_output/
+/outputs/
+/submission_smoke/
+/demo_data/
+/tmp/
+/temp/
+/.cache/
+/.pytest_cache/
+/LOCALIZATION_OPTIMIZATION_AUDIT.md
+**/candidate_cache/
+**/*_cache/
+**/dataset_validation/
+
+# Optional learned-model artifacts are not part of this training-free release.
+models/*.pt
+models/*.h5
+models/*.pth
+models/*.onnx
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Documentation
+# Markdown files are intentionally not ignored so project docs can be tracked.
+
+# Environment files
+.env
+.env.local
+.streamlit/
+
+# Large experimental checkpoints
+*.ckpt
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
